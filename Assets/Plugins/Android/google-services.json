@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "591526339722",
+    "project_id": "fir-databasetest2-e7e86",
+    "storage_bucket": "fir-databasetest2-e7e86.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:591526339722:android:d2efdc8050e420636fb973",
+        "android_client_info": {
+          "package_name": "com.DefaultCompany.FBTest_2"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBDSFJZmrxdj8ACC93ZfJDyDgSIGcU8sAU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
