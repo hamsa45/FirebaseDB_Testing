@@ -55,7 +55,7 @@ public class DB_manager : MonoBehaviour
     {
         database.GetReference(Exp).GetValueAsync().ContinueWithOnMainThread(task =>
         {
-            Debug.Log($" {ExpName} is the name provided and task completed");
+            //Debug.Log($" {ExpName} is the name provided and task completed");
             if (ExpName.Length == 0) ExpName = _nameInput.text;
             ExpName = ExpName.ToLower();
 
@@ -72,9 +72,9 @@ public class DB_manager : MonoBehaviour
                 if (snapshot.HasChild(ExpName))
 				{
                     string timeSpanValue = (string) snapshot.Child(ExpName).Value;
-                    Debug.Log($" ++++ previous time of {ExpName} : {timeSpanValue}");
+                    //Debug.Log($" ++++ previous time of {ExpName} : {timeSpanValue}");
                     TimeSpan netTimeSpan = totalTimeSpan.Add(TimeSpan.Parse(timeSpanValue));
-                    Debug.Log($" ++++ total net time of {ExpName}: {totalTimeSpan} + {timeSpanValue} = {netTimeSpan}");
+                    //Debug.Log($" ++++ total net time of {ExpName}: {totalTimeSpan} + {timeSpanValue} = {netTimeSpan}");
                     database.GetReference(Exp).Child(ExpName).SetValueAsync(netTimeSpan.ToString());
                 }
                 else
